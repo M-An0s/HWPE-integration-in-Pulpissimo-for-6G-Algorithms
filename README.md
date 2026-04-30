@@ -1,1 +1,1 @@
-# HWPE-integration-in-Pulpissimo-for-6G-algorithms
+# HWPE integration in Pulpissimo for 6G algorithms
