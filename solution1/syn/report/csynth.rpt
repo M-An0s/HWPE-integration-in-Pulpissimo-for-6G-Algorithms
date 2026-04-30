@@ -1,0 +1,199 @@
+
+
+================================================================
+== Synthesis Summary Report of 'cont'
+================================================================
++ General Information: 
+    * Date:           Thu Apr 23 17:01:23 2026
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        FFT
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------+------+------+---------+--------+----------+---------+------+----------+------+---------+------------+-----------+-----+
+    | Modules| Issue|      | Latency | Latency| Iteration|         | Trip |          |      |         |            |           |     |
+    | & Loops| Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF     |    LUT    | URAM|
+    +--------+------+------+---------+--------+----------+---------+------+----------+------+---------+------------+-----------+-----+
+    |+ cont  |     -|  0.60|        0|   0.000|         -|        1|     -|        no|     -|  18 (1%)|  2031 (~0%)|  7574 (3%)|    -|
+    +--------+------+------+---------+--------+----------+---------+------+----------+------+---------+------------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------+---------+----------+
+| Interface  | Mode    | Bitwidth |
++------------+---------+----------+
+| a_i_data   | ap_none | 32       |
+| a_i_ready  | ap_none | 1        |
+| a_i_strb   | ap_none | 4        |
+| a_i_valid  | ap_none | 1        |
+| b_i_data   | ap_none | 32       |
+| b_i_ready  | ap_none | 1        |
+| b_i_strb   | ap_none | 4        |
+| b_i_valid  | ap_none | 1        |
+| c_i_data   | ap_none | 32       |
+| c_i_ready  | ap_none | 1        |
+| c_i_strb   | ap_none | 4        |
+| c_i_valid  | ap_none | 1        |
+| clear      | ap_none | 1        |
+| d_o_data   | ap_none | 32       |
+| d_o_ready  | ap_none | 1        |
+| d_o_strb   | ap_none | 4        |
+| d_o_valid  | ap_none | 1        |
+| enable     | ap_none | 1        |
+| f_cnt      | ap_vld  | 11       |
+| f_valid    | ap_vld  | 1        |
+| function_r | ap_none | 1        |
+| len        | ap_none | 11       |
+| shift      | ap_none | 5        |
+| start_r    | ap_none | 1        |
++------------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------+
+| Argument | Direction | Datatype     |
++----------+-----------+--------------+
+| a_i      | inout     | hs_is_t*     |
+| b_i      | inout     | hs_is_t*     |
+| c_i      | out       | hs_is_t*     |
+| d_o      | inout     | hs_is_t*     |
+| clear    | in        | bool         |
+| enable   | in        | bool         |
+| function | in        | bool         |
+| start    | in        | bool         |
+| shift    | in        | ap_uint<5>   |
+| len      | in        | ap_uint<11>  |
+| f_cnt    | out       | ap_uint<11>* |
+| f_valid  | out       | bool*        |
++----------+-----------+--------------+
+
+* SW-to-HW Mapping
++----------+----------------+---------+
+| Argument | HW Interface   | HW Type |
++----------+----------------+---------+
+| a_i      | a_i_valid      | port    |
+| a_i      | a_i_ready      | port    |
+| a_i      | a_i_data       | port    |
+| a_i      | a_i_strb       | port    |
+| b_i      | b_i_valid      | port    |
+| b_i      | b_i_ready      | port    |
+| b_i      | b_i_data       | port    |
+| b_i      | b_i_strb       | port    |
+| c_i      | c_i_valid      | port    |
+| c_i      | c_i_ready      | port    |
+| c_i      | c_i_data       | port    |
+| c_i      | c_i_strb       | port    |
+| d_o      | d_o_valid      | port    |
+| d_o      | d_o_ready      | port    |
+| d_o      | d_o_data       | port    |
+| d_o      | d_o_strb       | port    |
+| clear    | clear          | port    |
+| enable   | enable         | port    |
+| function | function_r     | port    |
+| start    | start_r        | port    |
+| shift    | shift          | port    |
+| len      | len            | port    |
+| f_cnt    | f_cnt          | port    |
+| f_cnt    | f_cnt_ap_vld   | port    |
+| f_valid  | f_valid        | port    |
+| f_valid  | f_valid_ap_vld | port    |
++----------+----------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                      | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++---------------------------+-----+--------+-------------+-----+--------+---------+
+| + cont                    | 18  |        |             |     |        |         |
+|   mul_33s_33s_64_1_1_U3   | 3   |        | mul_ln840   | mul | auto   | 0       |
+|   add_ln840_fu_16755_p2   | -   |        | add_ln840   | add | fabric | 0       |
+|   grp_fu_16395_p2         | -   |        | add_ln380   | add | fabric | 0       |
+|   grp_fu_16403_p2         | -   |        | add_ln382   | add | fabric | 0       |
+|   add_ln384_fu_16767_p2   | -   |        | add_ln384   | add | fabric | 0       |
+|   add_ln395_fu_16793_p2   | -   |        | add_ln395   | add | fabric | 0       |
+|   add_ln406_fu_16812_p2   | -   |        | add_ln406   | add | fabric | 0       |
+|   add_ln353_fu_16830_p2   | -   |        | add_ln353   | add | fabric | 0       |
+|   tmp_7_fu_16852_p21      | -   |        | sub_ln186   | sub | fabric | 0       |
+|   mul_33s_33s_64_1_1_U5   | 3   |        | mul_ln840_1 | mul | auto   | 0       |
+|   add_ln840_1_fu_16908_p2 | -   |        | add_ln840_1 | add | fabric | 0       |
+|   grp_fu_16403_p2         | -   |        | add_ln356   | add | fabric | 0       |
+|   add_ln364_fu_16927_p2   | -   |        | add_ln364   | add | fabric | 0       |
+|   grp_fu_16412_p2         | -   |        | add_ln368   | add | fabric | 0       |
+|   ret_V_fu_16957_p2       | -   |        | ret_V       | add | fabric | 0       |
+|   ret_V_7_fu_17343_p2     | -   |        | ret_V_7     | sub | fabric | 0       |
+|   ret_V_8_fu_17385_p2     | -   |        | ret_V_8     | add | fabric | 0       |
+|   ret_V_9_fu_17771_p2     | -   |        | ret_V_9     | sub | fabric | 0       |
+|   add_ln333_fu_17809_p2   | -   |        | add_ln333   | add | fabric | 0       |
+|   grp_fu_16395_p2         | -   |        | add_ln343   | add | fabric | 0       |
+|   add_ln304_fu_17859_p2   | -   |        | add_ln304   | add | fabric | 0       |
+|   add_ln318_fu_17884_p2   | -   |        | add_ln318   | add | fabric | 0       |
+|   ret_V_10_fu_17990_p2    | -   |        | ret_V_10    | sub | fabric | 0       |
+|   grp_fu_16412_p2         | -   |        | add_ln315   | add | fabric | 0       |
+|   add_ln316_fu_18016_p2   | -   |        | add_ln316   | add | fabric | 0       |
+|   add_ln321_fu_18023_p2   | -   |        | add_ln321   | add | fabric | 0       |
+|   mul_33s_32s_39_1_1_U10  | 3   |        | ret_V_1     | mul | auto   | 0       |
+|   mul_32s_32s_39_1_1_U11  | 3   |        | ret_V_2     | mul | auto   | 0       |
+|   ret_V_3_fu_18198_p2     | -   |        | ret_V_3     | add | fabric | 0       |
+|   mul_32s_32s_39_1_1_U12  | 3   |        | ret_V_4     | mul | auto   | 0       |
+|   mul_33s_32s_39_1_1_U13  | 3   |        | ret_V_5     | mul | auto   | 0       |
+|   ret_V_6_fu_18232_p2     | -   |        | ret_V_6     | sub | fabric | 0       |
+|   add_ln240_fu_18424_p2   | -   |        | add_ln240   | add | fabric | 0       |
+|   add_ln241_fu_18444_p2   | -   |        | add_ln241   | add | fabric | 0       |
+|   add_ln840_2_fu_18460_p2 | -   |        | add_ln840_2 | add | fabric | 0       |
+|   add_ln428_fu_18742_p2   | -   |        | add_ln428   | add | fabric | 0       |
+|   add_ln186_fu_18761_p2   | -   |        | add_ln186   | add | fabric | 0       |
+|   add_ln436_fu_18770_p2   | -   |        | add_ln436   | add | fabric | 0       |
++---------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+----------------------------------+--------------------------------------+
+| Type            | Options                          | Location                             |
++-----------------+----------------------------------+--------------------------------------+
+| inline          |                                  | FFT/FFT.cpp:30 in computation        |
+| interface       | ap_ctrl_none port=return         | FFT/FFT.cpp:80 in cont, return       |
+| interface       | ap_none port = a_i               | FFT/FFT.cpp:82 in cont               |
+| disaggregate    | variable = a_i                   | FFT/FFT.cpp:83 in cont               |
+| interface       | ap_none port = b_i               | FFT/FFT.cpp:85 in cont               |
+| disaggregate    | variable = b_i                   | FFT/FFT.cpp:86 in cont               |
+| interface       | ap_none port = c_i               | FFT/FFT.cpp:88 in cont               |
+| disaggregate    | variable = c_i                   | FFT/FFT.cpp:89 in cont               |
+| interface       | ap_none port = d_o               | FFT/FFT.cpp:91 in cont               |
+| disaggregate    | variable = d_o                   | FFT/FFT.cpp:92 in cont               |
+| array_partition | variable=buffer_a complete dim=1 | FFT/FFT.cpp:118 in cont, buffer_a    |
+| array_partition | variable=buffer_b complete dim=1 | FFT/FFT.cpp:120 in cont, buffer_b    |
+| array_partition | variable=re_twiddles complete    | FFT/FFT.cpp:125 in cont, re_twiddles |
+| array_partition | variable=im_twiddles complete    | FFT/FFT.cpp:126 in cont, im_twiddles |
++-----------------+----------------------------------+--------------------------------------+
+
+

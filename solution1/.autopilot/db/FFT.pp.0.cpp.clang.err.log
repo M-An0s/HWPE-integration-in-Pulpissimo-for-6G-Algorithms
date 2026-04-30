@@ -1,0 +1,61 @@
+In file included from FFT/FFT.cpp:2:
+In file included from FFT/FFT.h:19:
+In file included from /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int.h:12:
+/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=and_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=or_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xor_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+FFT/FFT.cpp:30:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=computation_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+/tools/Xilinx/Vitis_HLS/2022.2/scripts/builtin.tcl:692:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=name=cont_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=cont
+        ^
+FFT/FFT.cpp:80:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=ap_ctrl_none port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_ctrl_none port=return
+        ^
+FFT/FFT.cpp:82:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=ap_none port = a_i_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_none port = a_i
+        ^
+FFT/FFT.cpp:83:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=disaggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=variable = a_i_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS disaggregate variable = a_i
+        ^
+FFT/FFT.cpp:85:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=ap_none port = b_i_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_none port = b_i
+        ^
+FFT/FFT.cpp:86:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=disaggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=variable = b_i_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS disaggregate variable = b_i
+        ^
+FFT/FFT.cpp:88:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=ap_none port = c_i_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_none port = c_i
+        ^
+FFT/FFT.cpp:89:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=disaggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=variable = c_i_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS disaggregate variable = c_i
+        ^
+FFT/FFT.cpp:91:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=ap_none port = d_o_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_none port = d_o
+        ^
+FFT/FFT.cpp:92:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=disaggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=variable = d_o_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS disaggregate variable = d_o
+        ^
+FFT/FFT.cpp:118:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=variable=buffer_a complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=buffer_a complete dim=1
+        ^
+FFT/FFT.cpp:120:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=variable=buffer_b complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=buffer_b complete dim=1
+        ^
+FFT/FFT.cpp:125:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=variable=re_twiddles complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=re_twiddles complete
+        ^
+FFT/FFT.cpp:126:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cont_XLX_SEP_ PragmaOptions=variable=im_twiddles complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=im_twiddles complete
+        ^
+FFT/FFT.cpp:75:56: warning: unused parameter 'start' [-Wunused-parameter]
+             bool clear,bool enable,bool function,bool start,shift_t shift,len_t len,
+                                                       ^
+19 warnings generated.

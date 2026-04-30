@@ -1,0 +1,10 @@
+remark: FFT/FFT.cpp:170:10: Inlining function 'computation(ap_int<32>, ap_int<32>)' into 'cont(hs_is_t*, hs_is_t*, hs_is_t*, hs_is_t*, bool, bool, bool, bool, ap_uint<5>, ap_uint<11>, ap_uint<11>*, bool*)'
+remark: FFT/FFT.cpp:76:0: Disaggregating variable 'a_i'
+remark: FFT/FFT.cpp:76:0: Disaggregating variable 'b_i'
+remark: FFT/FFT.cpp:76:0: Disaggregating variable 'c_i'
+remark: FFT/FFT.cpp:76:0: Disaggregating variable 'd_o'
+remark: FFT/FFT.cpp:76:0: Inlining function 'fft(int, int, State*, ap_int<64>*, ap_int<64>*, ap_int<32>*, ap_int<32>*, ap_int<32>*, ap_int<32>*, ap_int<64>, ap_int<64>)' into 'cont(hs_is_t*, hs_is_t*, hs_is_t*, hs_is_t*, bool, bool, bool, bool, ap_uint<5>, ap_uint<11>, ap_uint<11>*, bool*)'
+remark: FFT/FFT.cpp:117:0: Applying array_partition to '_ZZ4contP7hs_is_tS0_S0_S0_bbbb7ap_uintILi5EES1_ILi11EEPS3_PbE8buffer_a': Complete partitioning on dimension 1.
+remark: FFT/FFT.cpp:119:0: Applying array_partition to '_ZZ4contP7hs_is_tS0_S0_S0_bbbb7ap_uintILi5EES1_ILi11EEPS3_PbE8buffer_b': Complete partitioning on dimension 1.
+remark: <unknown>:0:0: Applying array_partition to 're_twiddles': Complete partitioning on dimension 1.
+remark: <unknown>:0:0: Applying array_partition to 'im_twiddles': Complete partitioning on dimension 1.

@@ -1,0 +1,25 @@
+Thu Apr 23 17:00:06 2026: Running xcd server. This server was NOT built by gradle, but presumably rdi.
+Thu Apr 23 17:00:06 2026: Server was asked to start on port: '40883'
+Thu Apr 23 17:00:06 2026: Server is using token UUID: '419290b9-4e29-4e07-ba27-d097ab67194b'
+Thu Apr 23 17:00:06 2026: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Thu Apr 23 17:00:06 2026: Attempting to start server on port '40883'
+Thu Apr 23 17:00:06 2026: XCD main fifo: created main fifo '/tmp/xcdmain419290b9-4e29-4e07-ba27-d097ab67194b', fd read = 12
+Thu Apr 23 17:00:06 2026: Running Dispatch Server
+Thu Apr 23 17:00:06 2026: Version 2.2.0
+Thu Apr 23 17:00:15 2026: Dispatch Server: Accepted socket connection from client
+Thu Apr 23 17:00:15 2026: Starting Socket connection
+Thu Apr 23 17:00:15 2026: EXCHANGE_TOKEN received, server token: 419290b9-4e29-4e07-ba27-d097ab67194b, passed token: 419290b9-4e29-4e07-ba27-d097ab67194b
+Thu Apr 23 17:00:15 2026: SESSION_MGR: creating session with session uuid: '17ea26ac-c293-4c06-8768-35f3609b1d54' and name 'vitis_hls'
+Thu Apr 23 17:00:15 2026: KERNEL_SVC: creating session with uuid: '17ea26ac-c293-4c06-8768-35f3609b1d54' and name 'vitis_hls'
+Thu Apr 23 17:00:15 2026: GUIDANCE_SMGR: creating guidance session with uuid: '17ea26ac-c293-4c06-8768-35f3609b1d54' and name 'vitis_hls'
+Thu Apr 23 17:01:26 2026: STOP_SERVER received, server token: 419290b9-4e29-4e07-ba27-d097ab67194b, passed token: 419290b9-4e29-4e07-ba27-d097ab67194b
+Thu Apr 23 17:01:26 2026: Socket received request to stop server.
+Thu Apr 23 17:01:26 2026: Dispatch Server: do_await_stop
+Thu Apr 23 17:01:26 2026: Dispatch Server: stopping mainFifo_
+Thu Apr 23 17:01:26 2026: XCD main fifo: Stopping
+Thu Apr 23 17:01:26 2026: XCD main fifo: do_read error code: Operation canceled
+Thu Apr 23 17:01:26 2026: XCD main fifo: bytes_transferred: 0
+Thu Apr 23 17:01:26 2026: SERVER: destructor for server bound to port 40883
+Thu Apr 23 17:01:26 2026: XCD main fifo: Good unlink of /tmp/xcdmain419290b9-4e29-4e07-ba27-d097ab67194b
+Thu Apr 23 17:01:26 2026: Server exiting with status 0.
+Thu Apr 23 17:01:26 2026: Closing log file.
