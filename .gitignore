@@ -1,3 +1,15 @@
+#Ignore HLS synthesis material
+solution*/
+solution1*/
+*/solution*/
+hls.app
+*.app
+*.log
+*.jou
+*.str
+*.tcl~
+
+
 # Prerequisites
 *.d
 
