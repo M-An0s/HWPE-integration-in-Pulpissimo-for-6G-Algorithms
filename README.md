@@ -36,6 +36,5 @@ The testing should be done using the hwpe-tb:  https://github.com/pulp-platform/
       .f_valid	        (engine_flags.acc_valid)  
       );  
 </pre>
-<br>
 where the mac engine interface would normally be
 
