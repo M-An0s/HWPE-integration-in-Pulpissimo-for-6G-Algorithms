@@ -5,7 +5,7 @@ The testing should be done using the hwpe-tb:  https://github.com/pulp-platform/
 - Step1: Remove the mac_engine.sv module and paste the Verilog files that come from synthesizing the project in HlS<br>
 - Step2: Go to the mac_fsm module and change the trans and line lengh size to agree with the expected number of inputs<br>
 - Step3: Go to mac_top folder and paste:
-<div style="margine-left 100px;">
+<div style="margin-left 100px;">
 cont i_engine (  
 .ap_clk           ( clk_i          ),    
 .ap_rst           ( rst_ni         ),    
