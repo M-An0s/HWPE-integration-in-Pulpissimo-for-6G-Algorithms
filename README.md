@@ -6,10 +6,7 @@ The testing should be done using the hwpe-tb:  https://github.com/pulp-platform/
 - Step2: Go to the mac_fsm module and change the trans and line lengh size to agree with the expected number of inputs in each channel<br>
 - Step3: Go to mac_top folder and paste the followingw here the mac engine interface would normally be:
   
-<button onclick="navigator.clipboard.writeText(document.getElementById('code').innerText)">
-Copy
-</button>
-<pre id="code">
+   <pre id="code">
      cont i_engine (  
      .ap_clk           ( clk_i          ),    
       .ap_rst           ( rst_ni         ),          
@@ -37,7 +34,7 @@ Copy
       .len              (engine_ctrl.len),  
       .f_cnt            (engine_flags.cnt),  
       .f_valid	        (engine_flags.acc_valid)  
-      );  
-</pre>
+      );    
+   </pre>  
 
 
