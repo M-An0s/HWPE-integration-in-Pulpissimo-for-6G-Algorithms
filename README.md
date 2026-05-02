@@ -5,9 +5,11 @@ The testing should be done using the hwpe-tb:  https://github.com/pulp-platform/
 - Step1: Remove the mac_engine.sv module and paste the Verilog files that come from synthesizing the project in HlS<br>
 - Step2: Go to the mac_fsm module and change the trans and line lengh size to agree with the expected number of inputs in each channel<br>
 - Step3: Go to mac_top folder and paste the followingw here the mac engine interface would normally be:
-
-<pre>
-```verilog
+  
+<button onclick="navigator.clipboard.writeText(document.getElementById('code').innerText)">
+Copy
+</button>
+<pre id="code">
      cont i_engine (  
      .ap_clk           ( clk_i          ),    
       .ap_rst           ( rst_ni         ),          
