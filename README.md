@@ -1,5 +1,7 @@
 # HWPE integration in Pulpissimo for 6G algorithms
 
+    ## Contents
+
 ## Testing   
 The testing should be done using the hwpe-tb:  https://github.com/pulp-platform/hwpe-tb<br>
 - Step1: Remove the mac_engine.sv module and paste the Verilog files that come from synthesizing the project in HlS<br>
