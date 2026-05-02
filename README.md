@@ -7,9 +7,9 @@ Step2: Go to the mac_fsm module and change the trans and line lengh size to agre
 Step3: Go to mac_top folder and paste:  
 <div style="margin-left: 40px;">
 cont i_engine (  
-.ap_clk           ( clk_i          ),  
-.ap_rst           ( rst_ni         ),  
-.a_i_valid        ( a.valid         ),   
+.ap_clk           ( clk_i          ),    
+.ap_rst           ( rst_ni         ),    
+.a_i_valid        ( a.valid         ),     
 .a_i_ready        ( a.ready        ),  
 .a_i_data         ( a.data ),  
 .a_i_strb         (a.strb),  
