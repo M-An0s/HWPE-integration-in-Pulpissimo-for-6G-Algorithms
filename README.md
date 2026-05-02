@@ -2,7 +2,7 @@
 
 ## Contents
    The [FFT.cpp](FFT/FFT.cpp) file has an FSM type structure and works by loading the buffers with the data coming from the HWPE streaming module.<br>
-   In this current version it contains a GEMM, a Convolution, an FFT and an iFFT and operation can be changed using the Function and Shift signals.<br>
+   In this current version it contains a GEMM, a Convolution, an FFT and an iFFT. The operation can be changed using the Function and Shift signals.<br>
    By putting your code in the Compute section of the FSM you can change the functionality of HWPE without having to implement changes in the transaction protocols
 
 
