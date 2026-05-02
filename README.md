@@ -8,11 +8,11 @@ The testing should be done using the hwpe-tb:  https://github.com/pulp-platform/
   
    <pre id="code">
      cont i_engine (  
-     .ap_clk           ( clk_i),    
-      .ap_rst           ( rst_ni),          
-      .a_i_valid        ( a.valid),     
-      .a_i_ready        ( a.ready),  
-      .a_i_data         ( a.data ),  
+     .ap_clk           (clk_i),    
+      .ap_rst           (rst_ni),          
+      .a_i_valid        (a.valid),     
+      .a_i_ready        (a.ready),  
+      .a_i_data         (a.data ),  
       .a_i_strb         (a.strb),  
       .b_i_valid        (b.valid),  
       .b_i_ready        (b.ready),  
