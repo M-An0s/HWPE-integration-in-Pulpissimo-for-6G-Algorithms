@@ -1,6 +1,6 @@
 # HWPE integration in Pulpissimo for 6G algorithms
 
-     Contentscont i_engine (  
+     cont i_engine (  
      .ap_clk           (clk_i),    
       .ap_rst           (rst_ni),          
       .a_i_valid        (a.valid),     
