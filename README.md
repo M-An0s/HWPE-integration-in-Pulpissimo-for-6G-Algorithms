@@ -11,8 +11,7 @@ The testing should be done using the hwpe-tb:  https://github.com/pulp-platform/
 - Step3: Go to mac_top folder and paste the followingw here the mac engine interface would normally be:
   
    
-      ##Contents cont i_engine (  
-     .ap_clk           (clk_i),    
+      ##Contents cont i_engine ( .ap_clk           (clk_i),    
       .ap_rst           (rst_ni),          
       .a_i_valid        (a.valid),     
       .a_i_ready        (a.ready),  
@@ -40,4 +39,5 @@ The testing should be done using the hwpe-tb:  https://github.com/pulp-platform/
       .f_valid	        (engine_flags.acc_valid)  
       );    
 
-
+ 
+     
