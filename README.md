@@ -1,6 +1,6 @@
 # HWPE integration in Pulpissimo for 6G algorithms
 
-    ## Contents
+     Contents
 
 ## Testing   
 The testing should be done using the hwpe-tb:  https://github.com/pulp-platform/hwpe-tb<br>
