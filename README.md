@@ -1,5 +1,5 @@
 # HWPE integration in Pulpissimo for 6G algorithms
-
+!!Later improvements and bug fixes are found here https://github.com/M-An0s/Measurements_and_test/tree/main (once the improvements have been transfered to all algorithms this repo will be replaced)
 ## Contents
    The [FFT.cpp](FFT/FFT.cpp) file has an FSM type structure and works by loading the buffers with the data coming from the HWPE streaming module.<br>
    In this current version it contains a GEMM, a Convolution, an FFT and an iFFT. The operation can be changed using the Function and Shift signals.<br>
